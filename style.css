@@ -1,0 +1,136 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*Para que 1rem sea igual a 10px*/
+    scroll-snap-type: y mandatory; /*CAMBIO------------------*/
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: black;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+.titulo{
+    font-family: 'Press Start 2P', cursive;
+    color: #2BF00D;
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 3rem;
+    
+}
+
+.subtema{
+    font-family:'Press Start 2P', cursive;
+    display: block;
+    margin: 1rem auto 0 auto;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    border-color: #2BF00D;
+    border-width: 3px;
+    border-style: solid;
+    padding: 1rem;
+}
+
+@keyframes anim{
+    0% {background-color: #2BF00D;}
+    25% {background-color: black;}  
+    50% {background-color: #2BF00D;}
+    75% {background-color: black;}
+    100% {background-color: #2BF00D;}
+}
+.subtema{
+    animation-name: anim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-pantalla{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.pantalla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15rem 4rem 5rem auto;
+    background-color: white;
+    width: 35rem;
+    height: 7rem;
+    border-style: double;
+    border-width: 5px;
+    border-color: black;
+    text-align: center;
+    font-size: large;
+}
+
+.resultado{
+    margin: 15rem auto 5rem 4rem;
+    border-style: outset;
+    border-width: 4px;
+}
+
+.resultado-boton{
+    height: 4rem;
+    width: 5rem;
+}
+
+
+/*/////////////////PARTE DE JAVASCRIPT////////////////////*/
+.pantalla-js{
+    width: 35rem;
+    height: 7rem;
+    border-style: double;
+    border-width: 5px;
+    border-color: black;
+    background-color: white;
+}
+
+.pantalla-js_texto{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight:normal;
+}
+/*///////////////////////////////////////////////////////*/
+
+
+.contenedor-operaciones{
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 47rem 0 47rem;
+    justify-content: space-around;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    min-width: 50rem;
+    margin:0 auto 0 auto;
+    border-style: outset;
+    border-width: 4px;
+}
+.grid-item {
+    border-color: white;
+    height: 5rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.borrador-boton{
+    color: red;
+}
+
